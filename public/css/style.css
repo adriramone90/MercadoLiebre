@@ -1,0 +1,216 @@
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    --verderOscuro: #00a650;
+
+    --letraPrincipal: 'Roboto', sans-serif;
+
+    --paragraph: 12px;
+    --discounts: 16px;
+    --Titulares: 24px; /* (Basado en tu última visita/Ofertas)*/
+    --Precios: 18px;    
+    --Descuentos: 16px;
+    --Descripciones: 16px;
+}
+
+/*Estilos Generales!!*/
+
+/*Resetear cajas!*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+html{
+    font-family: var(--letraPrincipal);
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: var(--Gris-claro);
+}
+
+li{
+    list-style: none;
+}
+
+/*************/
+/***HEADER***/
+/************/
+
+header{
+    display:flex;
+    flex-direction: column;
+    padding:1.5rem;
+    background-color: var(--Amarillo);
+    align-items: center;
+    font-size: var(--paragraph);
+    position: sticky;
+    top:0;
+}
+
+header div.top-header{
+    display:flex;
+    justify-content: space-evenly;
+}
+header img#logo{
+    width: 40vw;
+    margin-right: 3vw;
+    
+}
+
+header div div.busqueda{
+    display: flex;
+    margin-left: 3vw;
+}
+
+header div div.busqueda input{
+    width: 40vw;
+    height: 3.2rem;
+    position:static;
+    border-radius: 0.5rem;
+    border: 0px solid white;
+    padding: 0.7rem;
+}
+
+header div div.busqueda button{
+    position:absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left:11rem;
+    background:white;
+    border: 0px solid white;
+    border-radius: 0.5rem;
+
+}
+
+nav {
+    display:none;
+}
+
+header p{
+    padding: 1.6rem;
+}
+
+header div.burger-menu{
+    
+    background-color: var(--Celeste);
+    padding:0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    
+}
+
+header div.burger-menu a{
+    color:white;
+}
+
+
+/*************/
+/****MAIN****/
+/************/
+main{
+    padding: 1.5rem;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main section h3{
+    align-self: stretch;
+    
+    margin-bottom:1.6rem;
+    padding:0 0.5rem;
+    color: var(--Gris-oscuro);
+    
+}
+
+main section article.box-productos img{
+    width: 90vw;
+}
+
+main section article.box-productos div{
+    width: 90vw;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    padding-right:1.6rem;
+    padding-left:1.6rem;
+
+}
+
+main section article.box-productos div i{
+    color: var(--verderOscuro);
+    padding: 1.6rem 0.5rem;
+}
+
+main section article.box-productos div p.precios{
+    font-size: var(--Precios);
+}
+
+main section article.box-productos div p.descuentos{
+    font-size: var(--Descuentos);
+    color: var(--verderOscuro);
+}
+
+main section article.box-productos div strong{
+    display:inline-block;
+    font-size: var(--Descripciones);
+    color: var(--Gris-oscuro);
+    padding: 1.6rem 0;
+}
+
+
+
+/*************/
+/***FOOTER***/
+/************/
+
+footer{
+    background-color: #ffffff;
+    padding: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    
+    margin: 3rem 0.5rem 0.5rem;
+    align-items: center;
+}
+
+footer article{
+    margin-top:4rem;
+    width: 75%;
+}
+
+footer article i{
+    color: var(--Celeste);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+footer article h4{
+    font-size: var(--Descripciones);
+}
+
+footer article p{
+    font-size: var(--paragraph);
+}
+
+footer article#copyright{
+    width:100%;
+    text-align: left;
+}
