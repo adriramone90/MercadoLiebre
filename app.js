@@ -19,3 +19,19 @@ app.listen(PORT, function(){
 app.get("/", function(req, res){
     res.sendFile(ruta("/views/home.html"))
 })
+
+app.get("/register", function(req, res){
+    res.sendFile(ruta("/views/register.html"))
+})
+
+app.get("/register.html", function(req, res){
+    res.sendFile(ruta("/views/register.html"))
+})
+
+app.get("/login", function(req, res){
+    res.sendFile(ruta("/views/login.html"))
+})
+
+app.get("/login.html", function(req, res){
+    res.sendFile(ruta("/views/home.html"))
+})
