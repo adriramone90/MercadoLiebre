@@ -162,6 +162,11 @@ main section article.box-productos{
     
 }
 
+main section article.box-productos:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 main section article.box-productos img{
     width:100%;
     
@@ -321,11 +326,17 @@ footer article#copyright{
     }
 
     div.menu-nav nav ul li{
-        padding: 1.6rem;
+        padding: 5px;
+    }
+
+    div.menu-nav nav ul li:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+        text-shadow: 0 0 5px #050505;
     }
     
     div.menu-nav nav ul li i{
-        padding:5px;
+        padding:0px 5px 0px;
     }
 }
 
@@ -345,5 +356,9 @@ footer article#copyright{
 
     footer article.art-footer{
         width:30%;
+    }
+
+    div.menu-nav nav ul li{
+        padding: 1.6rem;
     }
 }
