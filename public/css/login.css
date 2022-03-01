@@ -140,16 +140,18 @@ header button.burger-menu a{
 /****MAIN****/
 /************/
 main{
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
 
 main section{
     width:90%;
+    max-width: 500px;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
+
 }
 
 main section h1{
@@ -176,36 +178,38 @@ main section form div input{
     width: 100%;
     height: 30px;
     border-radius: 3px;
-    border: none;
+    border: solid 1px var(--Celeste);
+    padding: 5px;
     }
-
+    
 main section form div input:focus{
-    border: 2px solid var(--Celeste);
-    box-shadow: 0 0 3px var(--Celeste);
-    
+    box-shadow: 0px 0px 3px var(--Celeste);
 }
 
-main section form div input:active{
-    border-color: var(--Celeste);
-
-}
-
-main section form div input:valid   {
-    border-color: var(--Celeste);
-
-}
-
-
-
-main section form div input:invalid{
-
-    
-    box-shadow: 0px 0px 3px red;
-}
 
 main section form button{
     margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    background-color: var(--Celeste);
+    border:none;
+    color:#fff;
+    border-radius: 3px;
+    cursor: pointer;
 }
+
+p.register{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    
+}
+
+p.register:hover{
+    transform: scale(1.1);
+}
+
 
 /*************/
 /***FOOTER***/
@@ -345,7 +349,7 @@ footer article#copyright{
     div.menu-nav nav ul li:hover{
         transform: scale(1.1);
         transition: 0.3s;
-        text-shadow: 0 0 5px #050505;
+        
     }
     
     div.menu-nav nav ul li i{

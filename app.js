@@ -16,22 +16,28 @@ app.listen(PORT, function(){
 
 })
 
+rutaHtml = rutaSolicitada => path.join(__dirname, rutaSolicitada)
+
 app.get("/", function(req, res){
-    res.sendFile(ruta("/views/home.html"))
+    res.sendFile(rutaHtml("./views/home.html"))
+})
+
+app.get("/home.html", function(req, res){
+    res.sendFile(rutaHtml("./views/home.html"))
 })
 
 app.get("/register", function(req, res){
-    res.sendFile(ruta("/views/register.html"))
+    res.sendFile(rutaHtml("./views/register.html"))
 })
 
 app.get("/register.html", function(req, res){
-    res.sendFile(ruta("/views/register.html"))
+    res.sendFile(rutaHtml("./views/register.html"))
 })
 
 app.get("/login", function(req, res){
-    res.sendFile(ruta("/views/login.html"))
+    res.sendFile(rutaHtml("./views/login.html"))
 })
 
 app.get("/login.html", function(req, res){
-    res.sendFile(ruta("/views/home.html"))
+    res.sendFile(rutaHtml("./views/login.html"))
 })

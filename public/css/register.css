@@ -136,6 +136,123 @@ header button.burger-menu a{
 }
 
 /*************/
+/**REGISTRO**/
+/************/
+
+main{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+main section{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+div.box-form,
+div.interes,
+div.box-form div label{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 3px;
+}
+
+div.box-form,
+div.interes{
+    width: 30%;
+    min-width: 250px;
+}
+
+
+
+div.box-form div input{
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: solid 1px var(--Celeste);
+    padding: 5px;
+    margin-top:5px;
+}
+
+form div div{
+    margin-bottom: 15px;
+}
+
+form div h2{
+    text-align:center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+
+form div h3{
+    text-align:center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+div.interes label{
+    width: 50%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.box-form,
+div.interes{
+    margin: 10px;
+}
+
+#perfil{
+    padding:0;
+    border: none;
+}
+
+div.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+div.buttons button{
+    background-color: var(--Celeste);
+    border:none;
+    border-radius: 3px;
+    padding:10px;
+    font-size: var(--Descripciones);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+div.buttons button:hover{
+    scale: 1.1;
+}
+
+p.login:hover{
+    transform: scale(1.1);  
+}
+
+
+/*************/
 /***FOOTER***/
 /************/
 
@@ -222,6 +339,8 @@ footer article#copyright{
     div.menu-nav nav ul li a i{
         padding:5px;
     }
+
+    
 }   
 
 
@@ -272,12 +391,13 @@ footer article#copyright{
     div.menu-nav nav ul li:hover{
         transform: scale(1.1);
         transition: 0.3s;
-        text-shadow: 0 0 5px #050505;
+        
     }
     
     div.menu-nav nav ul li i{
         padding:0px 5px 0px;
     }
+    
 }
 
 /*Media*/
@@ -301,5 +421,7 @@ footer article#copyright{
     div.menu-nav nav ul li{
         padding: 1.6rem;
     }
+
+    
 }
 
