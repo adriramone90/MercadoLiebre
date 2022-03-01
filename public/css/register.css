@@ -129,88 +129,11 @@ header div.menu-nav button.burger-menu{
     border-radius: 0.5rem;
     font-size: 2rem;
     border: none;
-    
-    
-    
 }
 
 header button.burger-menu a{
     color:white;
 }
-
-
-/*************/
-/****MAIN****/
-/************/
-div.img-banner img{
-    width:100%;
-}
-
-main{
-    padding: 1.5rem;
-}
-
-main h3{
-    margin: 0rem 1.5rem 1.5rem 1.5rem;
-    color: var(--Gris-oscuro);   
-}
-
-main section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-main section article.box-productos{
-    width:100%;
-    max-width: 300px;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    
-}
-
-main section article.box-productos:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-main section article.box-productos img{
-    width:100%;
-    
-}
-
-main section article.box-productos div{
-    width:100%;
-    background-color: #ffffff;
-    padding: 1.6rem;
-    
-}
-
-main section article.box-productos div i{
-    color: var(--verderOscuro);
-    padding: 0.5rem;
-    
-    
-}
-
-main section article.box-productos div p.precios{
-    font-size: var(--Precios);
-}
-
-main section article.box-productos div p.descuentos{
-    font-size: var(--Descuentos);
-    color: var(--verderOscuro);
-}
-
-main section article.box-productos div strong{
-    display:none;
-    font-size: var(--Descripciones);
-    color: var(--Gris-oscuro);
-    padding: 1.6rem 0;
-}
-
-
 
 /*************/
 /***FOOTER***/
@@ -250,7 +173,6 @@ footer article#copyright{
     width:100%;
     text-align: left;
 }
-
 @keyframes burgermenu{
     from{opacity: 0;}
     to{opacity: 1;}
@@ -327,50 +249,7 @@ footer article#copyright{
         max-width:350px;
     }
     
-    h3.titulares{
-        margin-left: 3.5vw;
-    }
     
-   
-
-    main section article.box-productos div strong{
-        display: block;
-        padding: 0.4rem 0
-    }
-    main section article.box-productos{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
-
-    .product-details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    div.product-details p.precios{
-        order:0;
-    }
-
-    div.product-details p.descuentos{
-        order:1;
-        position:relative;
-        right: 50px;
-        
-    }
-
-    div.product-details i{
-        order:2;
-        border:1px solid var(--verderOscuro);
-        border-radius: 50%;
-        padding:5px;
-        position:relative;
-        top:-30px;
-    }
-
-    div.product-details strong{
-        order: 3;
-    }
 
     div.menu-nav nav{
         width:85%;
