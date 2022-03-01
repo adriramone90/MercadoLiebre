@@ -128,9 +128,7 @@ header div.menu-nav button.burger-menu{
     padding:0.5rem 0.8rem;
     border-radius: 0.5rem;
     font-size: 2rem;
-    border: none;
-    
-    
+    border: none;   
     
 }
 
@@ -138,78 +136,79 @@ header button.burger-menu a{
     color:white;
 }
 
-
 /*************/
 /****MAIN****/
 /************/
-div.img-banner img{
-    width:100%;
-}
-
 main{
-    padding: 1.5rem;
-}
-
-main h3{
-    margin: 0rem 1.5rem 1.5rem 1.5rem;
-    color: var(--Gris-oscuro);   
-}
-
-main section{
+    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-main section article.box-productos{
-    width:100%;
-    max-width: 300px;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+main section{
+    width:90%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+main section h1{
+    margin: 0;
+    text-align:center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+main section form{
+    padding: 20px;
+}
+
+main section form div{
+    margin-bottom: 15px;
+}
+
+main section form div label{
+    display: block;
+    padding-bottom: 3px;
+}
+
+main section form div input{
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: solid 1px var(--Celeste);
+    padding: 5px;
+    }
+    
+main section form div input:focus{
+    box-shadow: 0px 0px 3px var(--Celeste);
+}
+
+
+main section form button{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    background-color: var(--Celeste);
+    border:none;
+    color:#fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+p.register{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
     
 }
 
-main section article.box-productos:hover{
+p.register:hover{
     transform: scale(1.1);
-    transition: 0.5s;
 }
-
-main section article.box-productos img{
-    width:100%;
-    
-}
-
-main section article.box-productos div{
-    width:100%;
-    background-color: #ffffff;
-    padding: 1.6rem;
-    
-}
-
-main section article.box-productos div i{
-    color: var(--verderOscuro);
-    padding: 0.5rem;
-    
-    
-}
-
-main section article.box-productos div p.precios{
-    font-size: var(--Precios);
-}
-
-main section article.box-productos div p.descuentos{
-    font-size: var(--Descuentos);
-    color: var(--verderOscuro);
-}
-
-main section article.box-productos div strong{
-    display:none;
-    font-size: var(--Descripciones);
-    color: var(--Gris-oscuro);
-    padding: 1.6rem 0;
-}
-
 
 
 /*************/
@@ -327,50 +326,7 @@ footer article#copyright{
         max-width:350px;
     }
     
-    h3.titulares{
-        margin-left: 3.5vw;
-    }
     
-   
-
-    main section article.box-productos div strong{
-        display: block;
-        padding: 0.4rem 0
-    }
-    main section article.box-productos{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
-
-    .product-details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    div.product-details p.precios{
-        order:0;
-    }
-
-    div.product-details p.descuentos{
-        order:1;
-        position:relative;
-        right: 50px;
-        
-    }
-
-    div.product-details i{
-        order:2;
-        border:1px solid var(--verderOscuro);
-        border-radius: 50%;
-        padding:5px;
-        position:relative;
-        top:-30px;
-    }
-
-    div.product-details strong{
-        order: 3;
-    }
 
     div.menu-nav nav{
         width:85%;
