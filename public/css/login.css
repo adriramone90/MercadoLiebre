@@ -86,9 +86,13 @@ header div div.busqueda input{
     border-radius: 0.5rem;
     border: 0px solid white;
     padding: 0.7rem;
+    outline: none;
 }
 
-
+header div div.busqueda input:focus{
+    border: 1px solid var(--Celeste);
+    box-shadow: 0px 0px 4px var(--Celeste);
+}
 
 
 header div div.busqueda button{
@@ -180,6 +184,7 @@ main section form div input{
     border-radius: 3px;
     border: solid 1px var(--Celeste);
     padding: 5px;
+    outline: none;
     }
     
 main section form div input:focus{
