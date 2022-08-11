@@ -64,11 +64,13 @@
                     <div>
                         <label for="nyp">Nombre y apellido</label>
                         <input type="text" name="nyp" id="nyp" required minlength="4" placeholder="Nombre y apellido">
+                        <span class="error">Debe ingresar un nombre válido</span>
                     </div>
 
                     <div>
                         <label for="fecha-nacimiento">Fecha de Nacimiento</label>
                         <input type="date" name="fecha" id="fecha-nacimiento" required minlength="4" placeholder="usuari@" max="2005-01-01">
+                        <span class="error">La fecha no es correcta</span>
                     </div>
 
                     <div>
@@ -122,24 +124,28 @@
                             Nombre de usuario
                             <input type="text" name="usuario" id="user" required minlength="4" placeholder="Usuari@">
                         </label>
+                        <span class="error">El usuario ya existe</span>
                     </div>
                     <div>
                         <label for="pass">
                             Contraseña
                             <input type="password" name="pass" id="pass" required minlength="8" placeholder="Contraseña">
                         </label>
+                        <span class="error">La contraseña debe tener entre 8 y 12 caracteres</span>
                     </div>
                     <div>
                         <label for="pass2">
                             Confirmar Contraseña
                             <input type="password" name="pass2" id="pass2" required minlength="8" placeholder="Contraseña">
                         </label>
+                        <span class="error">Las contraseñas no coinciden</span>
                     </div>
                     <div>
                         <label for="perfil">
                             Foto de Perfil
                             <input type="file" name="perfil" id="perfil" >
                         </label>
+                        <span class="error">Solo se admiten archivos png, jpg o jpeg</span>
                     </div>
                     
                 </div>

@@ -154,6 +154,9 @@ div.img-banner img{
 
 main{
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 main h3{
@@ -165,41 +168,66 @@ main section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
-main section article.box-productos{
+.box-productos{
     width:100%;
     max-width: 300px;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    
+    height: 400px;
 }
 
-main section article.box-productos:hover{
-    transform: scale(1.1);
+.box-productos:hover{
+    transform: scale(1.01);
     transition: 0.5s;
+    box-shadow: 0px 0px 4px rgb(100,100,100);
 }
 
 main section article.box-productos img{
     width:100%;
+}
+
+.product-details{
+    width:100%;
+    background-color: #fff;
+    padding: 16px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
     
 }
 
-main section article.box-productos div{
-    width:100%;
-    background-color: #ffffff;
-    padding: 1.6rem;
-    
-}
 
 main section article.box-productos div i{
     color: var(--verderOscuro);
-    padding: 0.5rem;
-    
-    
+    position: absolute;
+    right: 20px;
+    top:-16px;
+    transition: all .5s;
+    border:1px solid var(--verderOscuro);
+    border-radius: 50%;
+    padding:5px;
+
 }
 
+.product-details:hover > .icon-truck{
+    transform: rotate(-90deg);
+}
+.priceContainer{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 0;
+    width: 100%;
+    gap: 20px;
+
+}
 main section article.box-productos div p.precios{
     font-size: var(--Precios);
 }
@@ -209,11 +237,16 @@ main section article.box-productos div p.descuentos{
     color: var(--verderOscuro);
 }
 
-main section article.box-productos div strong{
-    display:none;
+.descripcion{
+    display: none;
     font-size: var(--Descripciones);
     color: var(--Gris-oscuro);
     padding: 1.6rem 0;
+    transition: all 450ms;
+}
+
+.product-details:hover > .descripcion{
+    display: block;
 }
 
 
@@ -336,47 +369,18 @@ footer article#copyright{
     h3.titulares{
         margin-left: 3.5vw;
     }
-    
-   
 
-    main section article.box-productos div strong{
-        display: block;
-        padding: 0.4rem 0
-    }
-    main section article.box-productos{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
 
-    .product-details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    div.product-details p.precios{
-        order:0;
-    }
-
-    div.product-details p.descuentos{
-        order:1;
-        position:relative;
-        right: 50px;
-        
-    }
-
-    div.product-details i{
+    /*div.product-details i{
         order:2;
         border:1px solid var(--verderOscuro);
         border-radius: 50%;
         padding:5px;
         position:relative;
         top:-30px;
-    }
+    }*/
 
-    div.product-details strong{
-        order: 3;
-    }
+
 
     div.menu-nav nav{
         width:85%;
