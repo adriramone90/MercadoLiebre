@@ -74,12 +74,12 @@ header img#logo{
     
 }
 
-header div div.busqueda{
+header div form.busqueda{
     display: flex;
     
 }
 
-header div div.busqueda input{
+header div form.busqueda input{
     width: 40vw;
     height: 3.2rem;
     
@@ -89,7 +89,7 @@ header div div.busqueda input{
     outline: none;
 }
 
-header div div.busqueda input:focus{
+header div form.busqueda input:focus{
     border: 1px solid var(--Celeste);
     box-shadow: 0px 0px 4px var(--Celeste);
 }
@@ -97,7 +97,7 @@ header div div.busqueda input:focus{
 
 
 
-header div div.busqueda button{
+header div form.busqueda button{
     position:relative;
     right:20px;
     top:3px;
@@ -217,7 +217,7 @@ main section article.box-productos div i{
 }
 
 .product-details:hover > .icon-truck{
-    transform: rotate(-90deg);
+    transform: rotate(-360deg);
 }
 .priceContainer{
     display: flex;
